@@ -1,0 +1,376 @@
+2019-08-13 10:56:28 [main] INFO  com.xjy.timevalue.TimevalueApplication -
+                Starting TimevalueApplication on NJ-11105159 with PID 11072 (D:\timevalue\target\classes started by 11105159 in D:\timevalue)
+2019-08-13 10:56:28 [main] INFO  com.xjy.timevalue.TimevalueApplication -
+                No active profile set, falling back to default profiles: default
+2019-08-13 10:56:28 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+                Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-08-13 10:56:28 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+                Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-08-13 10:56:28 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+                Finished Spring Data repository scanning in 11ms. Found 0 repository interfaces.
+2019-08-13 10:56:29 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+                Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6bc4de2e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-13 10:56:29 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -
+                Tomcat initialized with port(s): 8080 (http)
+2019-08-13 10:56:29 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -
+                Initializing ProtocolHandler ["http-nio-8080"]
+2019-08-13 10:56:29 [main] INFO  org.apache.catalina.core.StandardService -
+                Starting service [Tomcat]
+2019-08-13 10:56:29 [main] INFO  org.apache.catalina.core.StandardEngine -
+                Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-08-13 10:56:29 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -
+                Initializing Spring embedded WebApplicationContext
+2019-08-13 10:56:29 [main] INFO  org.springframework.web.context.ContextLoader -
+                Root WebApplicationContext: initialization completed in 1263 ms
+2019-08-13 10:56:31 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure -
+                Init DruidDataSource
+2019-08-13 10:56:31 [main] INFO  com.alibaba.druid.pool.DruidDataSource -
+                {dataSource-1} inited
+2019-08-13 10:56:57 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor -
+                Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-13 10:56:58 [main] INFO  o.s.a.rabbit.connection.CachingConnectionFactory -
+                Attempting to connect to: [127.0.0.1:5672]
+2019-08-13 10:56:58 [main] INFO  o.s.a.rabbit.connection.CachingConnectionFactory -
+                Created new connection: rabbitConnectionFactory#79b08632:0/SimpleConnection@60990e5c [delegate=amqp://guest@127.0.0.1:5672/, localPort= 62935]
+2019-08-13 10:56:58 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -
+                Starting ProtocolHandler ["http-nio-8080"]
+2019-08-13 10:56:58 [main] ERROR org.apache.catalina.util.LifecycleBase -
+                Failed to start component [Connector[HTTP/1.1-8080]]
+org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1008)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:227)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:263)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:195)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:296)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:552)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:742)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:389)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1213)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1202)
+	at com.xjy.timevalue.TimevalueApplication.main(TimevalueApplication.java:10)
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:230)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:213)
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1124)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1210)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:585)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1005)
+	... 14 common frames omitted
+2019-08-13 10:56:58 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -
+                Pausing ProtocolHandler ["http-nio-8080"]
+2019-08-13 10:56:58 [main] INFO  org.apache.catalina.core.StandardService -
+                Stopping service [Tomcat]
+2019-08-13 10:56:58 [main] INFO  org.apache.catalina.util.LifecycleBase -
+                The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+2019-08-13 10:56:58 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -
+                Stopping ProtocolHandler ["http-nio-8080"]
+2019-08-13 10:56:58 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -
+                Destroying ProtocolHandler ["http-nio-8080"]
+2019-08-13 10:56:58 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener -
+                
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-08-13 10:56:58 [main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter -
+                
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8080 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8080, or configure this application to listen on another port.
+
+2019-08-13 10:56:58 [main] INFO  o.s.a.r.listener.SimpleMessageListenerContainer -
+                Waiting for workers to finish.
+2019-08-13 10:56:59 [main] INFO  o.s.a.r.listener.SimpleMessageListenerContainer -
+                Successfully waited for workers to finish.
+2019-08-13 10:56:59 [main] INFO  o.s.a.r.listener.SimpleMessageListenerContainer -
+                Shutdown ignored - container is not active already
+2019-08-13 10:56:59 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor -
+                Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-13 10:56:59 [main] INFO  com.alibaba.druid.pool.DruidDataSource -
+                {dataSource-1} closed
+2019-08-13 11:30:09 [main] INFO  com.xjy.timevalue.TimevalueApplication -
+                Starting TimevalueApplication on NJ-11105159 with PID 14412 (D:\timevalue\target\classes started by 11105159 in D:\timevalue)
+2019-08-13 11:30:09 [main] INFO  com.xjy.timevalue.TimevalueApplication -
+                No active profile set, falling back to default profiles: default
+2019-08-13 11:30:10 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+                Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-08-13 11:30:10 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+                Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-08-13 11:30:10 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+                Finished Spring Data repository scanning in 8ms. Found 0 repository interfaces.
+2019-08-13 11:30:10 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+                Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$593f196a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-13 11:30:10 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -
+                Tomcat initialized with port(s): 8080 (http)
+2019-08-13 11:30:10 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -
+                Initializing ProtocolHandler ["http-nio-8080"]
+2019-08-13 11:30:10 [main] INFO  org.apache.catalina.core.StandardService -
+                Starting service [Tomcat]
+2019-08-13 11:30:10 [main] INFO  org.apache.catalina.core.StandardEngine -
+                Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-08-13 11:30:10 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -
+                Initializing Spring embedded WebApplicationContext
+2019-08-13 11:30:10 [main] INFO  org.springframework.web.context.ContextLoader -
+                Root WebApplicationContext: initialization completed in 932 ms
+2019-08-13 11:30:11 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure -
+                Init DruidDataSource
+2019-08-13 11:30:11 [main] INFO  com.alibaba.druid.pool.DruidDataSource -
+                {dataSource-1} inited
+2019-08-13 11:30:37 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor -
+                Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-13 11:30:37 [main] INFO  o.s.a.rabbit.connection.CachingConnectionFactory -
+                Attempting to connect to: [127.0.0.1:5672]
+2019-08-13 11:30:37 [main] INFO  o.s.a.rabbit.connection.CachingConnectionFactory -
+                Created new connection: rabbitConnectionFactory#76c52298:0/SimpleConnection@6ca30b8a [delegate=amqp://guest@127.0.0.1:5672/, localPort= 64057]
+2019-08-13 11:30:37 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -
+                Starting ProtocolHandler ["http-nio-8080"]
+2019-08-13 11:30:37 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -
+                Tomcat started on port(s): 8080 (http) with context path ''
+2019-08-13 11:30:37 [main] INFO  com.xjy.timevalue.TimevalueApplication -
+                Started TimevalueApplication in 28.443 seconds (JVM running for 29.115)
+2019-08-13 11:31:37 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -
+                Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-08-13 11:31:37 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -
+                Initializing Servlet 'dispatcherServlet'
+2019-08-13 11:31:37 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -
+                Completed initialization in 5 ms
+2019-08-13 11:41:04 [main] INFO  com.xjy.timevalue.TimevalueApplication -
+                Starting TimevalueApplication on NJ-11105159 with PID 14208 (D:\timevalue\target\classes started by 11105159 in D:\timevalue)
+2019-08-13 11:41:04 [main] INFO  com.xjy.timevalue.TimevalueApplication -
+                No active profile set, falling back to default profiles: default
+2019-08-13 11:41:04 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+                Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-08-13 11:41:04 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+                Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-08-13 11:41:04 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+                Finished Spring Data repository scanning in 8ms. Found 0 repository interfaces.
+2019-08-13 11:41:05 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+                Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$966683c9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-13 11:41:05 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -
+                Tomcat initialized with port(s): 8080 (http)
+2019-08-13 11:41:05 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -
+                Initializing ProtocolHandler ["http-nio-8080"]
+2019-08-13 11:41:05 [main] INFO  org.apache.catalina.core.StandardService -
+                Starting service [Tomcat]
+2019-08-13 11:41:05 [main] INFO  org.apache.catalina.core.StandardEngine -
+                Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-08-13 11:41:05 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -
+                Initializing Spring embedded WebApplicationContext
+2019-08-13 11:41:05 [main] INFO  org.springframework.web.context.ContextLoader -
+                Root WebApplicationContext: initialization completed in 929 ms
+2019-08-13 11:41:06 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure -
+                Init DruidDataSource
+2019-08-13 11:41:06 [main] INFO  com.alibaba.druid.pool.DruidDataSource -
+                {dataSource-1} inited
+2019-08-13 11:41:31 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor -
+                Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-13 11:41:31 [main] INFO  o.s.a.rabbit.connection.CachingConnectionFactory -
+                Attempting to connect to: [127.0.0.1:5672]
+2019-08-13 11:41:31 [main] INFO  o.s.a.rabbit.connection.CachingConnectionFactory -
+                Created new connection: rabbitConnectionFactory#692fd26:0/SimpleConnection@5f05c8d6 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 65004]
+2019-08-13 11:41:31 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -
+                Starting ProtocolHandler ["http-nio-8080"]
+2019-08-13 11:41:31 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -
+                Tomcat started on port(s): 8080 (http) with context path ''
+2019-08-13 11:41:31 [main] INFO  com.xjy.timevalue.TimevalueApplication -
+                Started TimevalueApplication in 27.751 seconds (JVM running for 28.459)
+2019-08-13 11:42:34 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -
+                Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-08-13 11:42:34 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -
+                Initializing Servlet 'dispatcherServlet'
+2019-08-13 11:42:34 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -
+                Completed initialization in 4 ms
+2019-08-13 11:52:45 [main] INFO  com.xjy.timevalue.TimevalueApplication -
+                Starting TimevalueApplication on NJ-11105159 with PID 8176 (D:\timevalue\target\classes started by 11105159 in D:\timevalue)
+2019-08-13 11:52:45 [main] INFO  com.xjy.timevalue.TimevalueApplication -
+                No active profile set, falling back to default profiles: default
+2019-08-13 11:52:46 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+                Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-08-13 11:52:46 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+                Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-08-13 11:52:46 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+                Finished Spring Data repository scanning in 8ms. Found 0 repository interfaces.
+2019-08-13 11:52:46 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+                Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5e9d8858] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-13 11:52:46 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -
+                Tomcat initialized with port(s): 8080 (http)
+2019-08-13 11:52:46 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -
+                Initializing ProtocolHandler ["http-nio-8080"]
+2019-08-13 11:52:46 [main] INFO  org.apache.catalina.core.StandardService -
+                Starting service [Tomcat]
+2019-08-13 11:52:46 [main] INFO  org.apache.catalina.core.StandardEngine -
+                Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-08-13 11:52:46 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -
+                Initializing Spring embedded WebApplicationContext
+2019-08-13 11:52:46 [main] INFO  org.springframework.web.context.ContextLoader -
+                Root WebApplicationContext: initialization completed in 937 ms
+2019-08-13 11:52:47 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure -
+                Init DruidDataSource
+2019-08-13 11:52:47 [main] INFO  com.alibaba.druid.pool.DruidDataSource -
+                {dataSource-1} inited
+2019-08-13 11:53:17 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor -
+                Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-13 11:53:18 [main] INFO  o.s.a.rabbit.connection.CachingConnectionFactory -
+                Attempting to connect to: [127.0.0.1:5672]
+2019-08-13 11:53:18 [main] INFO  o.s.a.rabbit.connection.CachingConnectionFactory -
+                Created new connection: rabbitConnectionFactory#2c43eb8:0/SimpleConnection@2be21396 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 49564]
+2019-08-13 11:53:18 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -
+                Starting ProtocolHandler ["http-nio-8080"]
+2019-08-13 11:53:18 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -
+                Tomcat started on port(s): 8080 (http) with context path ''
+2019-08-13 11:53:18 [main] INFO  com.xjy.timevalue.TimevalueApplication -
+                Started TimevalueApplication in 32.928 seconds (JVM running for 33.59)
+2019-08-13 14:15:56 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -
+                Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-08-13 14:15:56 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -
+                Initializing Servlet 'dispatcherServlet'
+2019-08-13 14:15:56 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -
+                Completed initialization in 5 ms
+2019-08-13 14:16:16 [main] INFO  com.xjy.timevalue.TimevalueApplication -
+                Starting TimevalueApplication on NJ-11105159 with PID 10072 (D:\timevalue\target\classes started by 11105159 in D:\timevalue)
+2019-08-13 14:16:16 [main] INFO  com.xjy.timevalue.TimevalueApplication -
+                No active profile set, falling back to default profiles: default
+2019-08-13 14:16:17 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+                Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-08-13 14:16:17 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+                Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-08-13 14:16:17 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+                Finished Spring Data repository scanning in 9ms. Found 0 repository interfaces.
+2019-08-13 14:16:17 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+                Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9c23726a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-13 14:16:17 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -
+                Tomcat initialized with port(s): 8080 (http)
+2019-08-13 14:16:17 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -
+                Initializing ProtocolHandler ["http-nio-8080"]
+2019-08-13 14:16:17 [main] INFO  org.apache.catalina.core.StandardService -
+                Starting service [Tomcat]
+2019-08-13 14:16:17 [main] INFO  org.apache.catalina.core.StandardEngine -
+                Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-08-13 14:16:17 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -
+                Initializing Spring embedded WebApplicationContext
+2019-08-13 14:16:17 [main] INFO  org.springframework.web.context.ContextLoader -
+                Root WebApplicationContext: initialization completed in 898 ms
+2019-08-13 14:16:18 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure -
+                Init DruidDataSource
+2019-08-13 14:16:18 [main] INFO  com.alibaba.druid.pool.DruidDataSource -
+                {dataSource-1} inited
+2019-08-13 14:16:52 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor -
+                Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-13 14:16:52 [main] INFO  o.s.a.rabbit.connection.CachingConnectionFactory -
+                Attempting to connect to: [127.0.0.1:5672]
+2019-08-13 14:16:52 [main] INFO  o.s.a.rabbit.connection.CachingConnectionFactory -
+                Created new connection: rabbitConnectionFactory#1ad8df52:0/SimpleConnection@4c6b4ed7 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 57679]
+2019-08-13 14:16:52 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -
+                Starting ProtocolHandler ["http-nio-8080"]
+2019-08-13 14:16:52 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -
+                Tomcat started on port(s): 8080 (http) with context path ''
+2019-08-13 14:16:52 [main] INFO  com.xjy.timevalue.TimevalueApplication -
+                Started TimevalueApplication in 36.102 seconds (JVM running for 37.09)
+2019-08-13 14:17:26 [main] INFO  com.xjy.timevalue.TimevalueApplication -
+                Starting TimevalueApplication on NJ-11105159 with PID 13052 (D:\timevalue\target\classes started by 11105159 in D:\timevalue)
+2019-08-13 14:17:26 [main] INFO  com.xjy.timevalue.TimevalueApplication -
+                No active profile set, falling back to default profiles: default
+2019-08-13 14:17:26 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+                Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-08-13 14:17:26 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+                Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-08-13 14:17:26 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+                Finished Spring Data repository scanning in 8ms. Found 0 repository interfaces.
+2019-08-13 14:17:26 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+                Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$11468bc6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-13 14:17:26 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -
+                Tomcat initialized with port(s): 8080 (http)
+2019-08-13 14:17:26 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -
+                Initializing ProtocolHandler ["http-nio-8080"]
+2019-08-13 14:17:26 [main] INFO  org.apache.catalina.core.StandardService -
+                Starting service [Tomcat]
+2019-08-13 14:17:26 [main] INFO  org.apache.catalina.core.StandardEngine -
+                Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-08-13 14:17:26 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -
+                Initializing Spring embedded WebApplicationContext
+2019-08-13 14:17:26 [main] INFO  org.springframework.web.context.ContextLoader -
+                Root WebApplicationContext: initialization completed in 896 ms
+2019-08-13 14:17:27 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure -
+                Init DruidDataSource
+2019-08-13 14:17:27 [main] INFO  com.alibaba.druid.pool.DruidDataSource -
+                {dataSource-1} inited
+2019-08-13 14:17:54 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor -
+                Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-13 14:17:54 [main] INFO  o.s.a.rabbit.connection.CachingConnectionFactory -
+                Attempting to connect to: [127.0.0.1:5672]
+2019-08-13 14:17:54 [main] INFO  o.s.a.rabbit.connection.CachingConnectionFactory -
+                Created new connection: rabbitConnectionFactory#7a231dfd:0/SimpleConnection@798256c5 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 57745]
+2019-08-13 14:17:55 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -
+                Starting ProtocolHandler ["http-nio-8080"]
+2019-08-13 14:17:55 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -
+                Tomcat started on port(s): 8080 (http) with context path ''
+2019-08-13 14:17:55 [main] INFO  com.xjy.timevalue.TimevalueApplication -
+                Started TimevalueApplication in 29.28 seconds (JVM running for 29.955)
+2019-08-13 14:17:57 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -
+                Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-08-13 14:17:57 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -
+                Initializing Servlet 'dispatcherServlet'
+2019-08-13 14:17:57 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -
+                Completed initialization in 4 ms
+2019-08-13 14:42:55 [main] INFO  com.xjy.timevalue.TimevalueApplication -
+                Starting TimevalueApplication on NJ-11105159 with PID 14696 (D:\timevalue\target\classes started by 11105159 in D:\timevalue)
+2019-08-13 14:42:55 [main] INFO  com.xjy.timevalue.TimevalueApplication -
+                No active profile set, falling back to default profiles: default
+2019-08-13 14:42:55 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+                Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-08-13 14:42:55 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+                Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-08-13 14:42:55 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+                Finished Spring Data repository scanning in 8ms. Found 0 repository interfaces.
+2019-08-13 14:42:56 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+                Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$76c5c649] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-13 14:42:56 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -
+                Tomcat initialized with port(s): 8080 (http)
+2019-08-13 14:42:56 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -
+                Initializing ProtocolHandler ["http-nio-8080"]
+2019-08-13 14:42:56 [main] INFO  org.apache.catalina.core.StandardService -
+                Starting service [Tomcat]
+2019-08-13 14:42:56 [main] INFO  org.apache.catalina.core.StandardEngine -
+                Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-08-13 14:42:56 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -
+                Initializing Spring embedded WebApplicationContext
+2019-08-13 14:42:56 [main] INFO  org.springframework.web.context.ContextLoader -
+                Root WebApplicationContext: initialization completed in 924 ms
+2019-08-13 14:42:57 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure -
+                Init DruidDataSource
+2019-08-13 14:42:57 [main] INFO  com.alibaba.druid.pool.DruidDataSource -
+                {dataSource-1} inited
+2019-08-13 14:43:24 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor -
+                Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-13 14:43:24 [main] INFO  o.s.a.rabbit.connection.CachingConnectionFactory -
+                Attempting to connect to: [127.0.0.1:5672]
+2019-08-13 14:43:24 [main] INFO  o.s.a.rabbit.connection.CachingConnectionFactory -
+                Created new connection: rabbitConnectionFactory#4eb30d44:0/SimpleConnection@67536ae0 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 58694]
+2019-08-13 14:43:24 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -
+                Starting ProtocolHandler ["http-nio-8080"]
+2019-08-13 14:43:24 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -
+                Tomcat started on port(s): 8080 (http) with context path ''
+2019-08-13 14:43:24 [main] INFO  com.xjy.timevalue.TimevalueApplication -
+                Started TimevalueApplication in 29.359 seconds (JVM running for 30.042)
+2019-08-13 14:43:28 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -
+                Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-08-13 14:43:28 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -
+                Initializing Servlet 'dispatcherServlet'
+2019-08-13 14:43:28 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -
+                Completed initialization in 6 ms
