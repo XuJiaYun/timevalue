@@ -16,7 +16,7 @@ public class TimeValueBean implements Serializable {
     public final static int SOCIAL_NEWS_TIMEVALUE = 5;
     public final static int TECH_NEWS_TIMEVALUE = 6;
     public final static int FIN_NEWS_TIMEVALUE = 7;
-    public final static double[] cat2time = {1.0,1.0,5.0,3.0,3.0,3.0,5.0,2.0};
+    public final static double[] cat2time = {1.5,2.0,5.0,3.0,3.0,3.0,4.0,2.0};
     public final static String[] cat2name = {"体育","娱乐","教育","政治","游戏","社会","科技","金融"};
 
     private String categoryName;
@@ -35,10 +35,5 @@ public class TimeValueBean implements Serializable {
         this.stringBuilder = new StringBuilder();
     }
 
-    public double setAndGetAverage(int i){
-        double result = (time + cat2time[i])/2;
-        setTime(result);
-        return result;
-    }
 
 }

@@ -43,7 +43,7 @@ public interface NewsMapper {
 
     List<News> selectNewsFromTopic(@Param("topicId") Integer topicId);
 
-    List<News> listAllNewsByReleaseTime();
+    List<News> listAllNewsByReleaseTime(@Param("news") News news);
 
     void adjustTimeValue(@Param("percentage") double percentage,@Param("id")int id);
 }

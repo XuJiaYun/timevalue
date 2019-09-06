@@ -1,8 +1,5 @@
 package com.xjy.timevalue.service;
 
-import org.springframework.stereotype.Service;
-
-
 public interface RedisService {
     void set(String key,String value);
 

@@ -19,10 +19,11 @@ public class AdjustMessageConsumer {
     @Autowired
     private TopicService topicService;
 
+    //向消息队列发送news用于调整其他新闻时效性
     @RabbitHandler
     public void adjustTime(String message){
         News news = JSONObject.parseObject(message,News.class);
         //logger.info("从adjust队列中取出 "+ news.getTitle() + "进行调整");
-        topicService.adjustNewsByTitleKeyWord(news);
+        topicService.adjustNewsByTopic(news);
     }
 }

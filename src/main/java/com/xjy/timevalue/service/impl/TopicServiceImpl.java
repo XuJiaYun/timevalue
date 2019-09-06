@@ -2,26 +2,24 @@ package com.xjy.timevalue.service.impl;
 
 import com.medallia.word2vec.Searcher;
 import com.medallia.word2vec.Word2VecModel;
-
-import com.xjy.timevalue.aop.LogAspect;
-import com.xjy.timevalue.dto.TimeValueBean;
 import com.xjy.timevalue.common.utils.TimeValueUtil;
 import com.xjy.timevalue.mbg.model.News;
 import com.xjy.timevalue.service.NewsService;
-import com.xjy.timevalue.service.TopicService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.io.File;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
 @Service
 public class TopicServiceImpl {
 
     private static int count = 0;
 
-    private static final Logger log = LoggerFactory.getLogger(LogAspect.class);
+    private static final Logger log = LoggerFactory.getLogger(TopicServiceImpl.class);
 
     @Autowired
     private NewsService newsService;
@@ -107,11 +105,4 @@ public class TopicServiceImpl {
         return result;
     }
 
-    public static void main(String[] args) throws Exception {
-        Searcher searcher = model.forSearch();
-        String a = "国内";
-        String b = "我国";
-        System.out.println(searcher.cosineDistance(a,b));
-        System.out.println(searcher.getMatches("国内",5));
-    }
 }

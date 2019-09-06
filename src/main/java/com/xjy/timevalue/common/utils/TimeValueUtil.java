@@ -14,6 +14,7 @@ public class TimeValueUtil {
 
     private static final Pattern pattern = Pattern.compile("[^A-Za-z0-9 \u4e00-\u9fa5]");
 
+    //查找关键词有序
     public static LinkedHashMap<String,Double> findKeyWordMap(String content,int topN) {
         List<Keyword> list = analyzer.analyze(content,topN);
         LinkedHashMap<String,Double> map = new LinkedHashMap<>();
@@ -23,6 +24,7 @@ public class TimeValueUtil {
         return map;
     }
 
+    //查找关键词无序
     public static ArrayList<String> findKeyWord(String content, int topN) {
         ArrayList<String> arrayList = new ArrayList<>();
         List<Keyword> list = analyzer.analyze(content,topN);
@@ -32,10 +34,12 @@ public class TimeValueUtil {
         return arrayList;
     }
 
+    //在一个文章中获得某一个词的TFIDF值
     public static double getStringTFIDF(String word,String content){
         return analyzer.getTFIDFFromContent(word,content);
     }
 
+    //文本清洗方法
     public static String cleanString(String content){
         return pattern.matcher(content).replaceAll("");
     }

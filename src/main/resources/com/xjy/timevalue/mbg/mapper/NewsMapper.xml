@@ -6,6 +6,7 @@
     <result column="title" jdbcType="VARCHAR" property="title" />
     <result column="author" jdbcType="VARCHAR" property="author" />
     <result column="release_time" jdbcType="TIMESTAMP" property="releaseTime" />
+    <result column="end_time" jdbcType="TIMESTAMP" property="endTime" />
     <result column="time_value" jdbcType="DOUBLE" property="timeValue" />
     <result column="information" jdbcType="VARCHAR" property="information" />
   </resultMap>
@@ -71,7 +72,7 @@
     </where>
   </sql>
   <sql id="Base_Column_List">
-    id, title, author, release_time, time_value, information
+    id, title, author, release_time, time_value, information,end_time
   </sql>
   <sql id="Blob_Column_List">
     content
@@ -129,10 +130,11 @@
       SELECT LAST_INSERT_ID()
     </selectKey>
     insert into news (title, author, release_time, 
-      time_value, information, content
+      time_value, information, content,end_time
       )
     values (#{title,jdbcType=VARCHAR}, #{author,jdbcType=VARCHAR}, #{releaseTime,jdbcType=TIMESTAMP}, 
-      #{timeValue,jdbcType=DOUBLE}, #{information,jdbcType=VARCHAR}, #{content,jdbcType=LONGVARCHAR}
+      #{timeValue,jdbcType=DOUBLE}, #{information,jdbcType=VARCHAR}, #{content,jdbcType=LONGVARCHAR},
+    #{endTime,jdbcType=TIMESTAMP}
       )
   </insert>
   <insert id="insertSelective" parameterType="com.xjy.timevalue.mbg.model.News">
@@ -159,6 +161,9 @@
       <if test="content != null">
         content,
       </if>
+      <if test="endTime != null">
+        end_time,
+      </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
       <if test="title != null">
@@ -178,6 +183,9 @@
       </if>
       <if test="content != null">
         #{content,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="endTime != null">
+        #{endTime,jdbcType=TIMESTAMP},
       </if>
     </trim>
   </insert>
@@ -211,6 +219,9 @@
       <if test="record.content != null">
         content = #{record.content,jdbcType=LONGVARCHAR},
       </if>
+      <if test="record.endTime != null">
+        end_time = #{record.endTime,jdbcType=TIMESTAMP},
+      </if>
     </set>
     <if test="_parameter != null">
       <include refid="Update_By_Example_Where_Clause" />
@@ -224,7 +235,8 @@
       release_time = #{record.releaseTime,jdbcType=TIMESTAMP},
       time_value = #{record.timeValue,jdbcType=DOUBLE},
       information = #{record.information,jdbcType=VARCHAR},
-      content = #{record.content,jdbcType=LONGVARCHAR}
+      content = #{record.content,jdbcType=LONGVARCHAR},
+      end_time = #{record.endTime,jdbcType=TIMESTAMP},
     <if test="_parameter != null">
       <include refid="Update_By_Example_Where_Clause" />
     </if>
@@ -236,7 +248,8 @@
       author = #{record.author,jdbcType=VARCHAR},
       release_time = #{record.releaseTime,jdbcType=TIMESTAMP},
       time_value = #{record.timeValue,jdbcType=DOUBLE},
-      information = #{record.information,jdbcType=VARCHAR}
+      information = #{record.information,jdbcType=VARCHAR},
+      end_time = #{record.endTime,jdbcType=TIMESTAMP},
     <if test="_parameter != null">
       <include refid="Update_By_Example_Where_Clause" />
     </if>
@@ -262,6 +275,9 @@
       <if test="content != null">
         content = #{content,jdbcType=LONGVARCHAR},
       </if>
+      <if test="endTime != null">
+        end_time = #{endTime,jdbcType=TIMESTAMP},
+      </if>
     </set>
     where id = #{id,jdbcType=INTEGER}
   </update>
@@ -272,7 +288,8 @@
       release_time = #{releaseTime,jdbcType=TIMESTAMP},
       time_value = #{timeValue,jdbcType=DOUBLE},
       information = #{information,jdbcType=VARCHAR},
-      content = #{content,jdbcType=LONGVARCHAR}
+      content = #{content,jdbcType=LONGVARCHAR},
+      end_time = #{endTime,jdbcType=TIMESTAMP},
     where id = #{id,jdbcType=INTEGER}
   </update>
   <update id="updateByPrimaryKey" parameterType="com.xjy.timevalue.mbg.model.News">
@@ -281,7 +298,8 @@
       author = #{author,jdbcType=VARCHAR},
       release_time = #{releaseTime,jdbcType=TIMESTAMP},
       time_value = #{timeValue,jdbcType=DOUBLE},
-      information = #{information,jdbcType=VARCHAR}
+      information = #{information,jdbcType=VARCHAR},
+      end_time = #{endTime,jdbcType=TIMESTAMP},
     where id = #{id,jdbcType=INTEGER}
   </update>
   <select id="selectByTitleLike" parameterType="java.lang.String" resultMap="BaseResultMap">
@@ -293,10 +311,16 @@
 	select news_id from topic_news
 		where topic_id = #{topicId})
   </select>
-  <select id="listAllNewsByReleaseTime" resultMap="BaseResultMap">
-    select * from news order by release_time desc
+  <select id="listAllNewsByReleaseTime" parameterType="com.xjy.timevalue.mbg.model.News" resultMap="BaseResultMap">
+    select * from news
+    <where>
+        <if test="news.title != null">
+            AND title like '%${news.title}%'
+        </if>
+    </where>
+    order by release_time desc
   </select>
   <update id="adjustTimeValue" >
-    update news set time_value = time_value*#{percentage} where id = #{id};
+    update news set time_value = ROUND(time_value*#{percentage},4) where id = #{id};
   </update>
 </mapper>

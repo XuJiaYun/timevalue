@@ -38,6 +38,9 @@ public class News implements Serializable {
     @JsonFormat(pattern="yyyy年MM月dd日 HH时mm分ss秒",timezone = "GMT+8")
     private Date releaseTime;
 
+    @JsonFormat(pattern="yyyy年MM月dd日 HH时mm分ss秒",timezone = "GMT+8")
+    private Date endTime;
+
     /**
      * 时效性（以天表示）
      *

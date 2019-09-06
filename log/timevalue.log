@@ -1,376 +1,456 @@
-2019-08-13 10:56:28 [main] INFO  com.xjy.timevalue.TimevalueApplication -
-                Starting TimevalueApplication on NJ-11105159 with PID 11072 (D:\timevalue\target\classes started by 11105159 in D:\timevalue)
-2019-08-13 10:56:28 [main] INFO  com.xjy.timevalue.TimevalueApplication -
+2019-09-06 09:31:02 [main] INFO  com.xjy.timevalue.TimevalueApplication -
+                Starting TimevalueApplication on NJ-11105159 with PID 18068 (D:\timevalue\target\classes started by 11105159 in D:\timevalue)
+2019-09-06 09:31:02 [main] INFO  com.xjy.timevalue.TimevalueApplication -
                 No active profile set, falling back to default profiles: default
-2019-08-13 10:56:28 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+2019-09-06 09:31:02 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
                 Multiple Spring Data modules found, entering strict repository configuration mode!
-2019-08-13 10:56:28 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+2019-09-06 09:31:02 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
                 Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-08-13 10:56:28 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
-                Finished Spring Data repository scanning in 11ms. Found 0 repository interfaces.
-2019-08-13 10:56:29 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
-                Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6bc4de2e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-08-13 10:56:29 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -
+2019-09-06 09:31:02 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
+                Finished Spring Data repository scanning in 10ms. Found 0 repository interfaces.
+2019-09-06 09:31:03 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
+                Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$beb6e8a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-06 09:31:03 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -
                 Tomcat initialized with port(s): 8080 (http)
-2019-08-13 10:56:29 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -
+2019-09-06 09:31:03 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -
                 Initializing ProtocolHandler ["http-nio-8080"]
-2019-08-13 10:56:29 [main] INFO  org.apache.catalina.core.StandardService -
+2019-09-06 09:31:03 [main] INFO  org.apache.catalina.core.StandardService -
                 Starting service [Tomcat]
-2019-08-13 10:56:29 [main] INFO  org.apache.catalina.core.StandardEngine -
+2019-09-06 09:31:03 [main] INFO  org.apache.catalina.core.StandardEngine -
                 Starting Servlet engine: [Apache Tomcat/9.0.21]
-2019-08-13 10:56:29 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -
+2019-09-06 09:31:03 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -
                 Initializing Spring embedded WebApplicationContext
-2019-08-13 10:56:29 [main] INFO  org.springframework.web.context.ContextLoader -
-                Root WebApplicationContext: initialization completed in 1263 ms
-2019-08-13 10:56:31 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure -
+2019-09-06 09:31:03 [main] INFO  org.springframework.web.context.ContextLoader -
+                Root WebApplicationContext: initialization completed in 1149 ms
+2019-09-06 09:31:03 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure -
                 Init DruidDataSource
-2019-08-13 10:56:31 [main] INFO  com.alibaba.druid.pool.DruidDataSource -
+2019-09-06 09:31:03 [main] INFO  com.alibaba.druid.pool.DruidDataSource -
                 {dataSource-1} inited
-2019-08-13 10:56:57 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor -
+2019-09-06 09:31:30 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor -
                 Initializing ExecutorService 'applicationTaskExecutor'
-2019-08-13 10:56:58 [main] INFO  o.s.a.rabbit.connection.CachingConnectionFactory -
+2019-09-06 09:31:30 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler -
+                Initializing ExecutorService 'taskScheduler'
+2019-09-06 09:31:30 [main] INFO  o.s.a.rabbit.connection.CachingConnectionFactory -
                 Attempting to connect to: [127.0.0.1:5672]
-2019-08-13 10:56:58 [main] INFO  o.s.a.rabbit.connection.CachingConnectionFactory -
-                Created new connection: rabbitConnectionFactory#79b08632:0/SimpleConnection@60990e5c [delegate=amqp://guest@127.0.0.1:5672/, localPort= 62935]
-2019-08-13 10:56:58 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -
+2019-09-06 09:31:30 [main] INFO  o.s.a.rabbit.connection.CachingConnectionFactory -
+                Created new connection: rabbitConnectionFactory#4a8df3e2:0/SimpleConnection@d919544 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 54373]
+2019-09-06 09:31:30 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -
                 Starting ProtocolHandler ["http-nio-8080"]
-2019-08-13 10:56:58 [main] ERROR org.apache.catalina.util.LifecycleBase -
-                Failed to start component [Connector[HTTP/1.1-8080]]
-org.apache.catalina.LifecycleException: Protocol handler start failed
-	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1008)
-	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
-	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:227)
-	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:263)
-	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:195)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:296)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:552)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:742)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:389)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1213)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1202)
-	at com.xjy.timevalue.TimevalueApplication.main(TimevalueApplication.java:10)
-Caused by: java.net.BindException: Address already in use: bind
-	at sun.nio.ch.Net.bind0(Native Method)
-	at sun.nio.ch.Net.bind(Net.java:433)
-	at sun.nio.ch.Net.bind(Net.java:425)
-	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
-	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
-	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:230)
-	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:213)
-	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1124)
-	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1210)
-	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:585)
-	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1005)
-	... 14 common frames omitted
-2019-08-13 10:56:58 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -
-                Pausing ProtocolHandler ["http-nio-8080"]
-2019-08-13 10:56:58 [main] INFO  org.apache.catalina.core.StandardService -
-                Stopping service [Tomcat]
-2019-08-13 10:56:58 [main] INFO  org.apache.catalina.util.LifecycleBase -
-                The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
-2019-08-13 10:56:58 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -
-                Stopping ProtocolHandler ["http-nio-8080"]
-2019-08-13 10:56:58 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -
-                Destroying ProtocolHandler ["http-nio-8080"]
-2019-08-13 10:56:58 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener -
-                
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2019-08-13 10:56:58 [main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter -
-                
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-The Tomcat connector configured to listen on port 8080 failed to start. The port may already be in use or the connector may be misconfigured.
-
-Action:
-
-Verify the connector's configuration, identify and stop any process that's listening on port 8080, or configure this application to listen on another port.
-
-2019-08-13 10:56:58 [main] INFO  o.s.a.r.listener.SimpleMessageListenerContainer -
-                Waiting for workers to finish.
-2019-08-13 10:56:59 [main] INFO  o.s.a.r.listener.SimpleMessageListenerContainer -
-                Successfully waited for workers to finish.
-2019-08-13 10:56:59 [main] INFO  o.s.a.r.listener.SimpleMessageListenerContainer -
-                Shutdown ignored - container is not active already
-2019-08-13 10:56:59 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor -
-                Shutting down ExecutorService 'applicationTaskExecutor'
-2019-08-13 10:56:59 [main] INFO  com.alibaba.druid.pool.DruidDataSource -
-                {dataSource-1} closed
-2019-08-13 11:30:09 [main] INFO  com.xjy.timevalue.TimevalueApplication -
-                Starting TimevalueApplication on NJ-11105159 with PID 14412 (D:\timevalue\target\classes started by 11105159 in D:\timevalue)
-2019-08-13 11:30:09 [main] INFO  com.xjy.timevalue.TimevalueApplication -
-                No active profile set, falling back to default profiles: default
-2019-08-13 11:30:10 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
-                Multiple Spring Data modules found, entering strict repository configuration mode!
-2019-08-13 11:30:10 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
-                Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-08-13 11:30:10 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
-                Finished Spring Data repository scanning in 8ms. Found 0 repository interfaces.
-2019-08-13 11:30:10 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
-                Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$593f196a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-08-13 11:30:10 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -
-                Tomcat initialized with port(s): 8080 (http)
-2019-08-13 11:30:10 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -
-                Initializing ProtocolHandler ["http-nio-8080"]
-2019-08-13 11:30:10 [main] INFO  org.apache.catalina.core.StandardService -
-                Starting service [Tomcat]
-2019-08-13 11:30:10 [main] INFO  org.apache.catalina.core.StandardEngine -
-                Starting Servlet engine: [Apache Tomcat/9.0.21]
-2019-08-13 11:30:10 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -
-                Initializing Spring embedded WebApplicationContext
-2019-08-13 11:30:10 [main] INFO  org.springframework.web.context.ContextLoader -
-                Root WebApplicationContext: initialization completed in 932 ms
-2019-08-13 11:30:11 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure -
-                Init DruidDataSource
-2019-08-13 11:30:11 [main] INFO  com.alibaba.druid.pool.DruidDataSource -
-                {dataSource-1} inited
-2019-08-13 11:30:37 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor -
-                Initializing ExecutorService 'applicationTaskExecutor'
-2019-08-13 11:30:37 [main] INFO  o.s.a.rabbit.connection.CachingConnectionFactory -
-                Attempting to connect to: [127.0.0.1:5672]
-2019-08-13 11:30:37 [main] INFO  o.s.a.rabbit.connection.CachingConnectionFactory -
-                Created new connection: rabbitConnectionFactory#76c52298:0/SimpleConnection@6ca30b8a [delegate=amqp://guest@127.0.0.1:5672/, localPort= 64057]
-2019-08-13 11:30:37 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -
-                Starting ProtocolHandler ["http-nio-8080"]
-2019-08-13 11:30:37 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -
+2019-09-06 09:31:30 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -
                 Tomcat started on port(s): 8080 (http) with context path ''
-2019-08-13 11:30:37 [main] INFO  com.xjy.timevalue.TimevalueApplication -
-                Started TimevalueApplication in 28.443 seconds (JVM running for 29.115)
-2019-08-13 11:31:37 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -
+2019-09-06 09:31:30 [main] INFO  com.xjy.timevalue.TimevalueApplication -
+                Started TimevalueApplication in 28.963 seconds (JVM running for 30.078)
+2019-09-06 09:34:27 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -
                 Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-08-13 11:31:37 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -
+2019-09-06 09:34:27 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -
                 Initializing Servlet 'dispatcherServlet'
-2019-08-13 11:31:37 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -
+2019-09-06 09:34:27 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -
                 Completed initialization in 5 ms
-2019-08-13 11:41:04 [main] INFO  com.xjy.timevalue.TimevalueApplication -
-                Starting TimevalueApplication on NJ-11105159 with PID 14208 (D:\timevalue\target\classes started by 11105159 in D:\timevalue)
-2019-08-13 11:41:04 [main] INFO  com.xjy.timevalue.TimevalueApplication -
-                No active profile set, falling back to default profiles: default
-2019-08-13 11:41:04 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
-                Multiple Spring Data modules found, entering strict repository configuration mode!
-2019-08-13 11:41:04 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
-                Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-08-13 11:41:04 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
-                Finished Spring Data repository scanning in 8ms. Found 0 repository interfaces.
-2019-08-13 11:41:05 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
-                Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$966683c9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-08-13 11:41:05 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -
-                Tomcat initialized with port(s): 8080 (http)
-2019-08-13 11:41:05 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -
-                Initializing ProtocolHandler ["http-nio-8080"]
-2019-08-13 11:41:05 [main] INFO  org.apache.catalina.core.StandardService -
-                Starting service [Tomcat]
-2019-08-13 11:41:05 [main] INFO  org.apache.catalina.core.StandardEngine -
-                Starting Servlet engine: [Apache Tomcat/9.0.21]
-2019-08-13 11:41:05 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -
-                Initializing Spring embedded WebApplicationContext
-2019-08-13 11:41:05 [main] INFO  org.springframework.web.context.ContextLoader -
-                Root WebApplicationContext: initialization completed in 929 ms
-2019-08-13 11:41:06 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure -
-                Init DruidDataSource
-2019-08-13 11:41:06 [main] INFO  com.alibaba.druid.pool.DruidDataSource -
-                {dataSource-1} inited
-2019-08-13 11:41:31 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor -
-                Initializing ExecutorService 'applicationTaskExecutor'
-2019-08-13 11:41:31 [main] INFO  o.s.a.rabbit.connection.CachingConnectionFactory -
-                Attempting to connect to: [127.0.0.1:5672]
-2019-08-13 11:41:31 [main] INFO  o.s.a.rabbit.connection.CachingConnectionFactory -
-                Created new connection: rabbitConnectionFactory#692fd26:0/SimpleConnection@5f05c8d6 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 65004]
-2019-08-13 11:41:31 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -
-                Starting ProtocolHandler ["http-nio-8080"]
-2019-08-13 11:41:31 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -
-                Tomcat started on port(s): 8080 (http) with context path ''
-2019-08-13 11:41:31 [main] INFO  com.xjy.timevalue.TimevalueApplication -
-                Started TimevalueApplication in 27.751 seconds (JVM running for 28.459)
-2019-08-13 11:42:34 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -
-                Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-08-13 11:42:34 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -
-                Initializing Servlet 'dispatcherServlet'
-2019-08-13 11:42:34 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -
-                Completed initialization in 4 ms
-2019-08-13 11:52:45 [main] INFO  com.xjy.timevalue.TimevalueApplication -
-                Starting TimevalueApplication on NJ-11105159 with PID 8176 (D:\timevalue\target\classes started by 11105159 in D:\timevalue)
-2019-08-13 11:52:45 [main] INFO  com.xjy.timevalue.TimevalueApplication -
-                No active profile set, falling back to default profiles: default
-2019-08-13 11:52:46 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
-                Multiple Spring Data modules found, entering strict repository configuration mode!
-2019-08-13 11:52:46 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
-                Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-08-13 11:52:46 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
-                Finished Spring Data repository scanning in 8ms. Found 0 repository interfaces.
-2019-08-13 11:52:46 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
-                Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5e9d8858] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-08-13 11:52:46 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -
-                Tomcat initialized with port(s): 8080 (http)
-2019-08-13 11:52:46 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -
-                Initializing ProtocolHandler ["http-nio-8080"]
-2019-08-13 11:52:46 [main] INFO  org.apache.catalina.core.StandardService -
-                Starting service [Tomcat]
-2019-08-13 11:52:46 [main] INFO  org.apache.catalina.core.StandardEngine -
-                Starting Servlet engine: [Apache Tomcat/9.0.21]
-2019-08-13 11:52:46 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -
-                Initializing Spring embedded WebApplicationContext
-2019-08-13 11:52:46 [main] INFO  org.springframework.web.context.ContextLoader -
-                Root WebApplicationContext: initialization completed in 937 ms
-2019-08-13 11:52:47 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure -
-                Init DruidDataSource
-2019-08-13 11:52:47 [main] INFO  com.alibaba.druid.pool.DruidDataSource -
-                {dataSource-1} inited
-2019-08-13 11:53:17 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor -
-                Initializing ExecutorService 'applicationTaskExecutor'
-2019-08-13 11:53:18 [main] INFO  o.s.a.rabbit.connection.CachingConnectionFactory -
-                Attempting to connect to: [127.0.0.1:5672]
-2019-08-13 11:53:18 [main] INFO  o.s.a.rabbit.connection.CachingConnectionFactory -
-                Created new connection: rabbitConnectionFactory#2c43eb8:0/SimpleConnection@2be21396 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 49564]
-2019-08-13 11:53:18 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -
-                Starting ProtocolHandler ["http-nio-8080"]
-2019-08-13 11:53:18 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -
-                Tomcat started on port(s): 8080 (http) with context path ''
-2019-08-13 11:53:18 [main] INFO  com.xjy.timevalue.TimevalueApplication -
-                Started TimevalueApplication in 32.928 seconds (JVM running for 33.59)
-2019-08-13 14:15:56 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -
-                Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-08-13 14:15:56 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -
-                Initializing Servlet 'dispatcherServlet'
-2019-08-13 14:15:56 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -
-                Completed initialization in 5 ms
-2019-08-13 14:16:16 [main] INFO  com.xjy.timevalue.TimevalueApplication -
-                Starting TimevalueApplication on NJ-11105159 with PID 10072 (D:\timevalue\target\classes started by 11105159 in D:\timevalue)
-2019-08-13 14:16:16 [main] INFO  com.xjy.timevalue.TimevalueApplication -
-                No active profile set, falling back to default profiles: default
-2019-08-13 14:16:17 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
-                Multiple Spring Data modules found, entering strict repository configuration mode!
-2019-08-13 14:16:17 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
-                Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-08-13 14:16:17 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
-                Finished Spring Data repository scanning in 9ms. Found 0 repository interfaces.
-2019-08-13 14:16:17 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
-                Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9c23726a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-08-13 14:16:17 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -
-                Tomcat initialized with port(s): 8080 (http)
-2019-08-13 14:16:17 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -
-                Initializing ProtocolHandler ["http-nio-8080"]
-2019-08-13 14:16:17 [main] INFO  org.apache.catalina.core.StandardService -
-                Starting service [Tomcat]
-2019-08-13 14:16:17 [main] INFO  org.apache.catalina.core.StandardEngine -
-                Starting Servlet engine: [Apache Tomcat/9.0.21]
-2019-08-13 14:16:17 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -
-                Initializing Spring embedded WebApplicationContext
-2019-08-13 14:16:17 [main] INFO  org.springframework.web.context.ContextLoader -
-                Root WebApplicationContext: initialization completed in 898 ms
-2019-08-13 14:16:18 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure -
-                Init DruidDataSource
-2019-08-13 14:16:18 [main] INFO  com.alibaba.druid.pool.DruidDataSource -
-                {dataSource-1} inited
-2019-08-13 14:16:52 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor -
-                Initializing ExecutorService 'applicationTaskExecutor'
-2019-08-13 14:16:52 [main] INFO  o.s.a.rabbit.connection.CachingConnectionFactory -
-                Attempting to connect to: [127.0.0.1:5672]
-2019-08-13 14:16:52 [main] INFO  o.s.a.rabbit.connection.CachingConnectionFactory -
-                Created new connection: rabbitConnectionFactory#1ad8df52:0/SimpleConnection@4c6b4ed7 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 57679]
-2019-08-13 14:16:52 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -
-                Starting ProtocolHandler ["http-nio-8080"]
-2019-08-13 14:16:52 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -
-                Tomcat started on port(s): 8080 (http) with context path ''
-2019-08-13 14:16:52 [main] INFO  com.xjy.timevalue.TimevalueApplication -
-                Started TimevalueApplication in 36.102 seconds (JVM running for 37.09)
-2019-08-13 14:17:26 [main] INFO  com.xjy.timevalue.TimevalueApplication -
-                Starting TimevalueApplication on NJ-11105159 with PID 13052 (D:\timevalue\target\classes started by 11105159 in D:\timevalue)
-2019-08-13 14:17:26 [main] INFO  com.xjy.timevalue.TimevalueApplication -
-                No active profile set, falling back to default profiles: default
-2019-08-13 14:17:26 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
-                Multiple Spring Data modules found, entering strict repository configuration mode!
-2019-08-13 14:17:26 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
-                Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-08-13 14:17:26 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
-                Finished Spring Data repository scanning in 8ms. Found 0 repository interfaces.
-2019-08-13 14:17:26 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
-                Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$11468bc6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-08-13 14:17:26 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -
-                Tomcat initialized with port(s): 8080 (http)
-2019-08-13 14:17:26 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -
-                Initializing ProtocolHandler ["http-nio-8080"]
-2019-08-13 14:17:26 [main] INFO  org.apache.catalina.core.StandardService -
-                Starting service [Tomcat]
-2019-08-13 14:17:26 [main] INFO  org.apache.catalina.core.StandardEngine -
-                Starting Servlet engine: [Apache Tomcat/9.0.21]
-2019-08-13 14:17:26 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -
-                Initializing Spring embedded WebApplicationContext
-2019-08-13 14:17:26 [main] INFO  org.springframework.web.context.ContextLoader -
-                Root WebApplicationContext: initialization completed in 896 ms
-2019-08-13 14:17:27 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure -
-                Init DruidDataSource
-2019-08-13 14:17:27 [main] INFO  com.alibaba.druid.pool.DruidDataSource -
-                {dataSource-1} inited
-2019-08-13 14:17:54 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor -
-                Initializing ExecutorService 'applicationTaskExecutor'
-2019-08-13 14:17:54 [main] INFO  o.s.a.rabbit.connection.CachingConnectionFactory -
-                Attempting to connect to: [127.0.0.1:5672]
-2019-08-13 14:17:54 [main] INFO  o.s.a.rabbit.connection.CachingConnectionFactory -
-                Created new connection: rabbitConnectionFactory#7a231dfd:0/SimpleConnection@798256c5 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 57745]
-2019-08-13 14:17:55 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -
-                Starting ProtocolHandler ["http-nio-8080"]
-2019-08-13 14:17:55 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -
-                Tomcat started on port(s): 8080 (http) with context path ''
-2019-08-13 14:17:55 [main] INFO  com.xjy.timevalue.TimevalueApplication -
-                Started TimevalueApplication in 29.28 seconds (JVM running for 29.955)
-2019-08-13 14:17:57 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -
-                Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-08-13 14:17:57 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -
-                Initializing Servlet 'dispatcherServlet'
-2019-08-13 14:17:57 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -
-                Completed initialization in 4 ms
-2019-08-13 14:42:55 [main] INFO  com.xjy.timevalue.TimevalueApplication -
-                Starting TimevalueApplication on NJ-11105159 with PID 14696 (D:\timevalue\target\classes started by 11105159 in D:\timevalue)
-2019-08-13 14:42:55 [main] INFO  com.xjy.timevalue.TimevalueApplication -
-                No active profile set, falling back to default profiles: default
-2019-08-13 14:42:55 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
-                Multiple Spring Data modules found, entering strict repository configuration mode!
-2019-08-13 14:42:55 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
-                Bootstrapping Spring Data repositories in DEFAULT mode.
-2019-08-13 14:42:55 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate -
-                Finished Spring Data repository scanning in 8ms. Found 0 repository interfaces.
-2019-08-13 14:42:56 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker -
-                Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$76c5c649] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-08-13 14:42:56 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -
-                Tomcat initialized with port(s): 8080 (http)
-2019-08-13 14:42:56 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -
-                Initializing ProtocolHandler ["http-nio-8080"]
-2019-08-13 14:42:56 [main] INFO  org.apache.catalina.core.StandardService -
-                Starting service [Tomcat]
-2019-08-13 14:42:56 [main] INFO  org.apache.catalina.core.StandardEngine -
-                Starting Servlet engine: [Apache Tomcat/9.0.21]
-2019-08-13 14:42:56 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -
-                Initializing Spring embedded WebApplicationContext
-2019-08-13 14:42:56 [main] INFO  org.springframework.web.context.ContextLoader -
-                Root WebApplicationContext: initialization completed in 924 ms
-2019-08-13 14:42:57 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure -
-                Init DruidDataSource
-2019-08-13 14:42:57 [main] INFO  com.alibaba.druid.pool.DruidDataSource -
-                {dataSource-1} inited
-2019-08-13 14:43:24 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor -
-                Initializing ExecutorService 'applicationTaskExecutor'
-2019-08-13 14:43:24 [main] INFO  o.s.a.rabbit.connection.CachingConnectionFactory -
-                Attempting to connect to: [127.0.0.1:5672]
-2019-08-13 14:43:24 [main] INFO  o.s.a.rabbit.connection.CachingConnectionFactory -
-                Created new connection: rabbitConnectionFactory#4eb30d44:0/SimpleConnection@67536ae0 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 58694]
-2019-08-13 14:43:24 [main] INFO  org.apache.coyote.http11.Http11NioProtocol -
-                Starting ProtocolHandler ["http-nio-8080"]
-2019-08-13 14:43:24 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer -
-                Tomcat started on port(s): 8080 (http) with context path ''
-2019-08-13 14:43:24 [main] INFO  com.xjy.timevalue.TimevalueApplication -
-                Started TimevalueApplication in 29.359 seconds (JVM running for 30.042)
-2019-08-13 14:43:28 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] -
-                Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-08-13 14:43:28 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -
-                Initializing Servlet 'dispatcherServlet'
-2019-08-13 14:43:28 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet -
-                Completed initialization in 6 ms
+2019-09-06 11:31:30 [scheduling-1] INFO  com.xjy.timevalue.tasks.CTRTask -
+                2019-9-6 11:31:30: 根据CTR +0.2867调整保时捷造出了一部当世最强电动车？时效性至2.548
+2019-09-06 14:22:31 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                保时捷女车主被曝多次与人发生纠纷 放言“我出了名的飙车没有找到相应主题自己建立一个主题为9054
+2019-09-06 14:22:31 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                将重庆#被保时捷女车主扇耳光男子回应#：双方已互相致歉，没想到影响这么大归入9054话题
+2019-09-06 14:22:31 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                话题9054目前共有2篇文章
+2019-09-06 14:22:31 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                将重庆#被保时捷女车主扇耳光男子回应#：我也确实打了她 对不起归入9054话题
+2019-09-06 14:22:31 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                话题9054目前共有3篇文章
+2019-09-06 14:22:31 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                将保时捷女车主自称“月姐”，派出所随便进，飙车骂人老毛病归入9054话题
+2019-09-06 14:22:31 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                话题9054目前共有4篇文章
+2019-09-06 14:22:31 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                将保时捷女车主事件详细经过来龙去脉 保时捷女车主最新消息归入9054话题
+2019-09-06 14:22:31 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                话题9054目前共有5篇文章
+2019-09-06 14:22:32 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                将最低售价 149.8 万的保时捷 Taycan 上市了，你心动了么？归入9054话题
+2019-09-06 14:22:32 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                话题9054目前共有6篇文章
+2019-09-06 14:22:32 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                将保时捷造出了一部当世最强电动车？归入9054话题
+2019-09-06 14:22:32 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                话题9054目前共有7篇文章
+2019-09-06 14:22:33 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                自打脸，“香港记者协会”这下难看了……没有找到相应主题自己建立一个主题为9055
+2019-09-06 14:22:33 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                打头炮！元朗区议会在香港18区议会中率先通过止暴制乱议案没有找到相应主题自己建立一个主题为9056
+2019-09-06 14:22:33 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                赵雅芝还真是不显老, 穿印花裙美艳了时光, 同龄人看了会咋想?没有找到相应主题自己建立一个主题为9057
+2019-09-06 14:22:33 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                龙卷风导致汽车损毁, 保险公司会赔吗? 这几点要知道没有找到相应主题自己建立一个主题为9058
+2019-09-06 14:22:33 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                助力乡村振兴, 青年责无旁贷! 太平这名大学生用知识回馈家乡没有找到相应主题自己建立一个主题为9059
+2019-09-06 14:22:34 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                有谁知道19年河南高考, 升学志愿填报方法, 如何正确选择专业!没有找到相应主题自己建立一个主题为9060
+2019-09-06 14:22:34 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                林志颖开F1登山晒朋友圈, 拍完照就让拖车给拉走, 网友: 咱能不装吗没有找到相应主题自己建立一个主题为9061
+2019-09-06 14:22:34 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                浙江省首届民俗精英赛在瑞安举行没有找到相应主题自己建立一个主题为9062
+2019-09-06 14:22:35 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                不要迷信中签率! 这些频频流摇的板块, 房子其实都快卖完了没有找到相应主题自己建立一个主题为9063
+2019-09-06 14:22:35 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                撒贝宁第一次吃运动员餐, 一口气吃三个王八, 身体这么虚吗?没有找到相应主题自己建立一个主题为9064
+2019-09-06 14:22:35 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                曾经的奢侈品苹果手机, 那个卖肾的男孩, 他现在过得怎么样了?没有找到相应主题自己建立一个主题为9065
+2019-09-06 14:22:35 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                海贼王892集: 索隆再创新刀法! 霸气短刀, 鹰眼: 这招好眼熟啊没有找到相应主题自己建立一个主题为9066
+2019-09-06 14:22:36 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                6月末我国外汇储备规模 环比增加182亿美元没有找到相应主题自己建立一个主题为9067
+2019-09-06 14:22:36 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                董洁39岁了又怎样? 穿T恤加超短裙照样艳压18岁少女!没有找到相应主题自己建立一个主题为9068
+2019-09-06 14:22:36 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                2019中国三对三篮球联赛温州赛区开赛, 109支队伍展开激烈角逐没有找到相应主题自己建立一个主题为9069
+2019-09-06 14:22:37 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                扬州内河造船呈井喷式增长, 新受理船舶同比上升239%没有找到相应主题自己建立一个主题为9070
+2019-09-06 14:22:37 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                美元走高保持强势 今日黄金低位蓄势没有找到相应主题自己建立一个主题为9071
+2019-09-06 14:22:37 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                笑喷了！网友总结中国男篮惨败7大原因，真的不赖李楠周琦没有找到相应主题自己建立一个主题为9072
+2019-09-06 14:22:38 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                将男篮2连败无缘16强！网友向李楠提出8问，李楠会主动辞职吗？归入9072话题
+2019-09-06 14:22:38 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                话题9072目前共有2篇文章
+2019-09-06 14:22:38 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                两大名嘴痛批中国男篮！杨毅：倒退了10年！苏群：无地自容没有找到相应主题自己建立一个主题为9073
+2019-09-06 14:22:39 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                将朋友圈炸了！中国男篮止步16强，全网都在心疼这个男人归入9072话题
+2019-09-06 14:22:39 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                话题9072目前共有3篇文章
+2019-09-06 14:22:40 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                鹿晗实惨！《上海堡垒》票房严重亏本，导演甩锅“用错了鹿晗”没有找到相应主题自己建立一个主题为9074
+2019-09-06 14:22:41 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                将讲道理，总结一下《上海堡垒》到底差在哪儿了归入9074话题
+2019-09-06 14:22:41 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                话题9074目前共有2篇文章
+2019-09-06 14:22:41 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                将《上海堡垒》评分3.0，视频网站上线再遭群嘲，网友称还能再降归入9074话题
+2019-09-06 14:22:41 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                话题9074目前共有3篇文章
+2019-09-06 14:22:42 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                将鹿晗的《上海堡垒》只值一星？人的偏见是一座大山，细节体现情怀归入9074话题
+2019-09-06 14:22:42 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                话题9074目前共有4篇文章
+2019-09-06 14:22:43 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                洗排骨, 别傻傻只会放盐了, 多加“2样”, 淤血脏东西悄悄流出来没有找到相应主题自己建立一个主题为9075
+2019-09-06 14:22:43 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                曲奇云盘2.4.1版更新内容都在这里没有找到相应主题自己建立一个主题为9076
+2019-09-06 14:22:44 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                土豆营养丰富, 又能填饱肚子, 为什么没有成为中国人的主食之一?没有找到相应主题自己建立一个主题为9077
+2019-09-06 14:22:44 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                韩国最美体育老师将成人妻! 老公竟是釜山行的丧尸大叔? 简直是美女与野兽没有找到相应主题自己建立一个主题为9078
+2019-09-06 14:22:45 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                江苏省2019年提前录取本科投档线(理科类—其他院校)没有找到相应主题自己建立一个主题为9079
+2019-09-06 14:22:45 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                网易云扎心热评: 别人删你系统不会提示, 你删别人, 系统: 确定吗没有找到相应主题自己建立一个主题为9080
+2019-09-06 14:22:46 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                【提醒】曲靖 这次下雨要下到14日没有找到相应主题自己建立一个主题为9081
+2019-09-06 14:22:46 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                上海工匠学院“育匠人”提高职工学历和能力 包起帆任院长没有找到相应主题自己建立一个主题为9082
+2019-09-06 14:22:48 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                当涂助推经济高质量发展走在前列没有找到相应主题自己建立一个主题为9083
+2019-09-06 14:22:48 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                元朝是中国武力最强的朝代, 也是有史以来土地面积最大的朝代没有找到相应主题自己建立一个主题为9084
+2019-09-06 14:22:49 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                北海交警大队召开新闻通气会 加强警媒沟通没有找到相应主题自己建立一个主题为9085
+2019-09-06 14:22:49 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                北海交警与中国人保商议制定辖区“警保联动”方案没有找到相应主题自己建立一个主题为9086
+2019-09-06 14:22:50 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                释迦牟尼佛, 本是古印度迦毗罗卫国(今尼泊尔境内)的太子没有找到相应主题自己建立一个主题为9087
+2019-09-06 14:22:50 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                静医生备孕: 怀孕六月胎宝宝查出兔唇, 只怪孕妈做这些事!没有找到相应主题自己建立一个主题为9088
+2019-09-06 14:22:51 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                《鼠胆英雄》曝喜剧特辑 岳云鹏化身“剧组吉祥物”没有找到相应主题自己建立一个主题为9089
+2019-09-06 14:22:52 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                美妆洞察: 我们90后, 浑身都是痛点没有找到相应主题自己建立一个主题为9090
+2019-09-06 14:22:53 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                撩妹攻略 李现教你如何俘获女孩芳心没有找到相应主题自己建立一个主题为9091
+2019-09-06 14:22:55 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                将杨紫＆李现：青春，就是要努力多做些有价值的事归入9091话题
+2019-09-06 14:22:55 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                话题9091目前共有2篇文章
+2019-09-06 14:22:55 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                将当涂助推经济高质量发展走在前列归入9083话题
+2019-09-06 14:22:55 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                话题9083目前共有2篇文章
+2019-09-06 14:22:56 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                将网易云热评——你放弃过，一个爱了很久的人吗归入9080话题
+2019-09-06 14:22:56 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                话题9080目前共有2篇文章
+2019-09-06 14:22:56 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                将「虐心句」14句最热门的网易云音乐热评，看完好扎心归入9080话题
+2019-09-06 14:22:56 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                话题9080目前共有3篇文章
+2019-09-06 14:22:57 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                信用卡账单逾期? 后果很严重没有找到相应主题自己建立一个主题为9092
+2019-09-06 14:22:58 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                晒晒我的婚房, 老公品味还不错, 颜色搭配还真是惊喜到我了!没有找到相应主题自己建立一个主题为9093
+2019-09-06 14:22:59 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                BAI龙宇: 我们一向反季节投资没有找到相应主题自己建立一个主题为9094
+2019-09-06 14:23:00 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                《将夜》剧中九位美女全部换上现代装, 会是怎样的风景? 个个超美没有找到相应主题自己建立一个主题为9095
+2019-09-06 14:23:00 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                高血压不能只看数值的高低, 这项指标也很重要, 在平时需要注意没有找到相应主题自己建立一个主题为9096
+2019-09-06 14:23:01 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                女生这样回复你QQ消息? 八成“没看上”你, 识相的赶紧撤退吧!没有找到相应主题自己建立一个主题为9097
+2019-09-06 14:23:02 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                巴勒斯坦怪异理发术: 用大火直接烧头发没有找到相应主题自己建立一个主题为9098
+2019-09-06 14:23:02 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                热狗爆料“双冠军”内幕, 现场回答对吴亦凡的看法, 让主持人笑翻没有找到相应主题自己建立一个主题为9099
+2019-09-06 14:23:03 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                年老导盲犬退休, 相隔10年重回寄养家庭, 它还会记得曾经的家人吗……没有找到相应主题自己建立一个主题为9100
+2019-09-06 14:23:04 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                救护车路遇轿车互不相让 俩司机激烈对骂引发争议: 请尊重生命没有找到相应主题自己建立一个主题为9101
+2019-09-06 14:23:05 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                巨大“蝴蝶”飞入锦江乐园 主题灯光秀分7个区域讲述不同故事没有找到相应主题自己建立一个主题为9102
+2019-09-06 14:23:06 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                中国的景点, 一点也不输给国外, 甚至更美没有找到相应主题自己建立一个主题为9103
+2019-09-06 14:23:07 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                太平天国辅王: 战功赫赫, 谋复天国, 韧性十足没有找到相应主题自己建立一个主题为9104
+2019-09-06 14:23:08 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                34岁女白领怀孕遭歧视, 工资停发、移出工作群等, 维权难度超乎想象没有找到相应主题自己建立一个主题为9105
+2019-09-06 14:23:09 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                齐鲁人才网: 每日通勤108分钟, 山东白领到底有多累?没有找到相应主题自己建立一个主题为9106
+2019-09-06 14:23:10 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                孩子出现这些表现时, 就已经被宠坏了, 以后受累的只有父母没有找到相应主题自己建立一个主题为9107
+2019-09-06 14:23:11 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                开倒车? Pixel 4没了刘海, 也非全面屏没有找到相应主题自己建立一个主题为9108
+2019-09-06 14:23:12 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                女星“旗袍配貂”哪家强? 霸气又高贵, 她好像民国豪门阔太太!没有找到相应主题自己建立一个主题为9109
+2019-09-06 14:23:13 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                在家蒸馒头, 不用水和牛奶, 不加酵母, 蒸好后又大又软, 味道香甜没有找到相应主题自己建立一个主题为9110
+2019-09-06 14:23:14 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                Faker记仇? 谈起Doinb表示不了解, 网友调侃: 这么膨胀没有找到相应主题自己建立一个主题为9111
+2019-09-06 14:23:14 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                打造醉“美”新四团没有找到相应主题自己建立一个主题为9112
+2019-09-06 14:23:15 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                宣告美国失败: 新加坡已正式表态, 华为难与匹敌没有找到相应主题自己建立一个主题为9113
+2019-09-06 14:23:16 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                高中三年坚持这6种方法, 英语从90分到144分! 差生也能逆袭没有找到相应主题自己建立一个主题为9114
+2019-09-06 14:23:17 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                梦泪女友上分, 梦泪喊来了整个AG战队, 网友: 酸了!没有找到相应主题自己建立一个主题为9115
+2019-09-06 14:23:18 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                海底捞的番茄浓汤, 涮啥都好吃, 超鲜美, 巨香浓, 学会随吃随做没有找到相应主题自己建立一个主题为9116
+2019-09-06 14:23:19 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                福特在华首款纯电车/续航360km 领界EV将9月上市没有找到相应主题自己建立一个主题为9117
+2019-09-06 14:23:20 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                办公室美女秀起来了! 观众都恋爱了! 就是摄影师怎么办?没有找到相应主题自己建立一个主题为9118
+2019-09-06 14:23:21 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                王菲站出来宣示主权, 谢霆锋却有些不耐烦没有找到相应主题自己建立一个主题为9119
+2019-09-06 14:23:21 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                华为Mate 30再曝光: 还是浴霸设计?没有找到相应主题自己建立一个主题为9120
+2019-09-06 14:23:22 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                居家生活怎能少得了一件柔软顺滑的冰丝睡衣呢没有找到相应主题自己建立一个主题为9121
+2019-09-06 14:23:23 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                中国从不拍吻戏的4大女明星, 第一个无人想吻, 第四个无人敢吻!没有找到相应主题自己建立一个主题为9122
+2019-09-06 14:23:25 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                新高考12种选课组合, 沈阳孩子和家长为啥青睐这7种?没有找到相应主题自己建立一个主题为9123
+2019-09-06 14:23:26 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                古代没有自来水, 那么唐代长安上万人口的用水从哪来? 涨知识了没有找到相应主题自己建立一个主题为9124
+2019-09-06 14:23:26 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                5月31天内运势增旺, 财星照命宫, 3生肖财运稳升, 钞票满天飞!没有找到相应主题自己建立一个主题为9125
+2019-09-06 14:23:28 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                幽默诙谐东方朔, 妙趣作答, 临终前却进良言没有找到相应主题自己建立一个主题为9126
+2019-09-06 14:23:29 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                抖音“大师”, 满嘴所谓的“鸡汤”, 爆出自己随便拍个视频收入几百万没有找到相应主题自己建立一个主题为9127
+2019-09-06 14:23:30 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                慈禧4件私人用品, 一件经常用, 一件爱不释手, 一件“贴身”没有找到相应主题自己建立一个主题为9128
+2019-09-06 14:23:31 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                “儿子, 你是要媳妇还是要妈”“妈, 别为难儿子好吗? ”没有找到相应主题自己建立一个主题为9129
+2019-09-06 14:23:32 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                网红滤镜下的十级美颜暴击，天王郭富城承受得住么？没有找到相应主题自己建立一个主题为9130
+2019-09-06 14:23:33 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                三星电子二季度营业利润减半没有找到相应主题自己建立一个主题为9131
+2019-09-06 14:23:35 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                球迷对莫雷爆粗, 莫雷表示不需要道歉, 中国火箭球迷是最棒的没有找到相应主题自己建立一个主题为9132
+2019-09-06 14:23:36 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                NBA最长的五个名字! 字母哥第三, 谁能一口气念出穆大叔全名?没有找到相应主题自己建立一个主题为9133
+2019-09-06 14:23:37 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                融创融公馆99平装修|温暖舒适的居家空间, 是装载幸福的容器没有找到相应主题自己建立一个主题为9134
+2019-09-06 14:23:38 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                如果不是此国帮助, 二战时日本根本就不敢打中国, 现在我们却要感谢它!没有找到相应主题自己建立一个主题为9135
+2019-09-06 14:23:40 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                新民网: 儿童癫痫危害大, 出现这些症状家长要当心 ROSA机器人辅助切除病灶没有找到相应主题自己建立一个主题为9136
+2019-09-06 14:23:41 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                猫神直播人气低迷，热度不及一线路人主播，这个缺陷，很无解！没有找到相应主题自己建立一个主题为9137
+2019-09-06 14:23:42 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                小米9价格再调整, 为何网友吐槽声更多? 这点说出了大家的心声!没有找到相应主题自己建立一个主题为9138
+2019-09-06 14:23:43 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                有情人节有圣诞节等多个节日, 哪些星座容易出现感情危机?没有找到相应主题自己建立一个主题为9139
+2019-09-06 14:23:44 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                关注早产宝宝智力发育, 预防脑瘫和智力低下!没有找到相应主题自己建立一个主题为9140
+2019-09-06 14:23:45 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                中国联通: 董事胡晓明、熊晓鸽辞职 增补张建锋为董事没有找到相应主题自己建立一个主题为9141
+2019-09-06 14:23:46 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                这样喝水越喝越美没有找到相应主题自己建立一个主题为9142
+2019-09-06 14:23:48 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                被诱拐的女人没有找到相应主题自己建立一个主题为9143
+2019-09-06 14:23:49 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                CSGO Navi S1mple : 换掉Edward是个艰难的决定。没有找到相应主题自己建立一个主题为9144
+2019-09-06 14:23:51 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                养护菊花: 盆栽菊花的品种及栽培管理, 学会如下几招, 一盆变多盆没有找到相应主题自己建立一个主题为9145
+2019-09-06 14:23:52 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                陈立农首次拍摄嘉人电子刊 给阿农寄信的时候到了没有找到相应主题自己建立一个主题为9146
+2019-09-06 14:23:53 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                小伙暗恋“收费站女神”，如今奔现表白，网友：心凉了没有找到相应主题自己建立一个主题为9147
+2019-09-06 14:23:54 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                将你没有理由对他人使用“暴力”, 即使手捧鲜花, 即使教育孩子归入9107话题
+2019-09-06 14:23:54 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                话题9107目前共有2篇文章
+2019-09-06 14:23:56 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                重庆警方摧毁一特大涉黑跨国贩毒集团没有找到相应主题自己建立一个主题为9148
+2019-09-06 14:23:57 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                马伊琍晒纯素颜照庆43岁生日, 发长文回顾过去, 却只字未提文章没有找到相应主题自己建立一个主题为9149
+2019-09-06 14:23:58 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                全新日产轩逸正式到店, 化身运动“鲜肉”, 空间更大, 朗逸头疼了没有找到相应主题自己建立一个主题为9150
+2019-09-06 14:24:00 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                姐姐深夜收留陌生男子, 将其带进帐篷, 妹妹发现后脸色大变匆忙报警没有找到相应主题自己建立一个主题为9151
+2019-09-06 14:24:01 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                摄影: 看过穿打底裤出街的美女, 却从未见过穿着睡袍出街的美女!没有找到相应主题自己建立一个主题为9152
+2019-09-06 14:24:02 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                他曾是千里眼, 蒋介石嫌他没出息, 后来成为十大元帅没有找到相应主题自己建立一个主题为9153
+2019-09-06 14:24:04 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                巨人119情报: 惋惜兵长, 艾伦身首异处人类肃清计划受阻没有找到相应主题自己建立一个主题为9154
+2019-09-06 14:24:05 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                “垃圾分类”进军时尚, 塑料袋汽水瓶, 网友: 都把人逼成啥样了!没有找到相应主题自己建立一个主题为9155
+2019-09-06 14:24:06 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                是什么事情让韩安冉老公不敢说话? 上一尺寸有变化, 网友: A-E没有找到相应主题自己建立一个主题为9156
+2019-09-06 14:24:08 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                辣妈林心如: 中年的认命, 往往从放弃护肤开始没有找到相应主题自己建立一个主题为9157
+2019-09-06 14:24:09 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                恨一个人, 最好的报复方式: 三不问没有找到相应主题自己建立一个主题为9158
+2019-09-06 14:24:11 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                日本人眼里的5位中国“古装美女”, 热巴不算啥, 她美的倾国倾城没有找到相应主题自己建立一个主题为9159
+2019-09-06 14:24:12 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                75寸电视太贵? 那考虑下家用投影仪吧没有找到相应主题自己建立一个主题为9160
+2019-09-06 14:24:14 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                俄核动力深潜器被烧，出事地点有蹊跷？“凶手”可能是美盟友所为没有找到相应主题自己建立一个主题为9161
+2019-09-06 14:24:16 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                这几双鞋才是牛仔裤今夏最佳CP, 时髦范没有找到相应主题自己建立一个主题为9162
+2019-09-06 14:24:17 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                在蒋介石的眼里, 这个人就是元帅中的武圣, 就算是彭老总也不行没有找到相应主题自己建立一个主题为9163
+2019-09-06 14:24:18 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                炒糖色时, 先放糖还是油? 很多人做错, 难怪红烧肉发苦, 不好看没有找到相应主题自己建立一个主题为9164
+2019-09-06 14:24:20 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                和平精英这棵装备树, 浇水可掉落3级头, 网友: 位置我都记好了!没有找到相应主题自己建立一个主题为9165
+2019-09-06 14:24:23 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                我真的又想好好夸一下古天乐没有找到相应主题自己建立一个主题为9166
+2019-09-06 14:24:25 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                天行九歌: 韩非又贫又穷, 仅凭两招, 哄得紫女甘愿倒贴全部身家没有找到相应主题自己建立一个主题为9167
+2019-09-06 14:24:26 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                多吃碱性食物有益于改善身体没有找到相应主题自己建立一个主题为9168
+2019-09-06 14:24:27 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                只有自己载出好果树, 自己才常有好果子吃没有找到相应主题自己建立一个主题为9169
+2019-09-06 14:24:28 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                张伦硕耍剑失败, 谁注意钟丽缇话脱口而出的话? 这是什么神仙老婆没有找到相应主题自己建立一个主题为9170
+2019-09-06 14:24:30 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                停机断网也能充话费, 网友: 会不会给骗子可趁之机?没有找到相应主题自己建立一个主题为9171
+2019-09-06 14:24:31 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                在沙漠中有一种神奇的动物, 利用星光导航, 直线行走不迷路没有找到相应主题自己建立一个主题为9172
+2019-09-06 14:24:33 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                构思精巧! 青花牌的墨色分布, 还能这样雕刻!没有找到相应主题自己建立一个主题为9173
+2019-09-06 14:24:34 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                曾被誉为“仙剑四美”的她们, 都已嫁为人妻, 如今只剩下她还单身没有找到相应主题自己建立一个主题为9174
+2019-09-06 14:24:36 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                马王堆现完好女尸, 填补一历史空白, 学者: 西汉至少领先一千年没有找到相应主题自己建立一个主题为9175
+2019-09-06 14:24:37 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                宁溪镇积极开展四经普数据审核没有找到相应主题自己建立一个主题为9176
+2019-09-06 14:24:39 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                作为朋友该怎么安慰失恋的人?没有找到相应主题自己建立一个主题为9177
+2019-09-06 14:24:41 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                一场大雨, 冲垮了印度的“谎言”, 6.92万亿项目付诸东流没有找到相应主题自己建立一个主题为9178
+2019-09-06 14:24:43 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                去西藏别只看布达拉宫, 这4个地方也值得一去!没有找到相应主题自己建立一个主题为9179
+2019-09-06 14:24:44 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                应用日报 | 隐形守护者首次降价, 微视开放朋友圈 30 秒长视频, 还有 4 款限免没有找到相应主题自己建立一个主题为9180
+2019-09-06 14:24:46 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                怎么识别入门级渣男和骨灰级渣男没有找到相应主题自己建立一个主题为9181
+2019-09-06 14:24:48 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                《正义联盟》的终局之战, 六维空间彻底结束, 超人才是最强战力没有找到相应主题自己建立一个主题为9182
+2019-09-06 14:24:49 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                将爸爸姓"满", 给女儿取名遭老婆翻白眼, 给孩子取名别太随便了归入9107话题
+2019-09-06 14:24:49 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                话题9107目前共有3篇文章
+2019-09-06 14:24:51 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                7月中旬, 繁华似梦, 前缘未了, 3星座终感动前任, 相伴到老没有找到相应主题自己建立一个主题为9183
+2019-09-06 14:24:52 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                iPhone新机配置都还没确定, “山寨苹果新机”就先行一步!没有找到相应主题自己建立一个主题为9184
+2019-09-06 14:24:54 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                小户型儿童房这样装, 空间轻松翻倍没有找到相应主题自己建立一个主题为9185
+2019-09-06 14:24:56 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                戚薇李承铉把机场走成秀场? 这些明星告诉你, 情侣装怎样穿才高级没有找到相应主题自己建立一个主题为9186
+2019-09-06 14:24:58 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                农村姑娘4上星光大道, 未成功出名反倒欠百万债务, 现状令人唏嘘没有找到相应主题自己建立一个主题为9187
+2019-09-06 14:24:59 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                男人废寝忘食! 通宵苦读的5本奇书, 一朝读懂, 城府深不可测没有找到相应主题自己建立一个主题为9188
+2019-09-06 14:25:01 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                女子穿裙子蹦极, 后面的人看热闹不嫌事大, 结果“太刺激了”!没有找到相应主题自己建立一个主题为9189
+2019-09-06 14:25:03 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                三年前她是李幼斌的“老婆”, 三年后却成为李幼斌的“儿媳妇”没有找到相应主题自己建立一个主题为9190
+2019-09-06 14:25:04 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                将一个日本友人, 用数十年将中国这片荒漠变“绿洲”, 敬佩和感谢归入9135话题
+2019-09-06 14:25:04 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                话题9135目前共有2篇文章
+2019-09-06 14:25:05 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                洲际赛: IG首战对决闪电狼, Theshy再次候场, Rookie回归MVP没有找到相应主题自己建立一个主题为9191
+2019-09-06 14:25:07 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.xjy.timevalue.service.impl.TFIDFServiceImpl -
+                坚持跑步, 就会有意想不到的效果, 提高颜值也不是梦没有找到相应主题自己建立一个主题为9192
+2019-09-06 15:31:29 [scheduling-1] INFO  com.xjy.timevalue.tasks.CTRTask -
+                2019-9-6 15:31:29: 根据CTR +0.2584调整重庆#被保时捷女车主扇耳光男子回应#：双方已互相致歉，没想到影响这么大时效性至1.1554
+2019-09-06 15:31:29 [scheduling-1] INFO  com.xjy.timevalue.tasks.CTRTask -
+                2019-9-6 15:31:29: 根据CTR +0.2741调整保时捷女车主事件详细经过来龙去脉 保时捷女车主最新消息时效性至1.78
+2019-09-06 15:31:29 [scheduling-1] INFO  com.xjy.timevalue.tasks.CTRTask -
+                2019-9-6 15:31:29: 根据CTR +0.1991调整保时捷造出了一部当世最强电动车？时效性至4.5
+2019-09-06 15:31:29 [scheduling-1] INFO  com.xjy.timevalue.tasks.CTRTask -
+                2019-9-6 15:31:29: 根据CTR +0.1577调整有谁知道19年河南高考, 升学志愿填报方法, 如何正确选择专业!时效性至5.5
+2019-09-06 15:31:29 [scheduling-1] INFO  com.xjy.timevalue.tasks.CTRTask -
+                2019-9-6 15:31:29: 根据CTR +0.2761调整不要迷信中签率! 这些频频流摇的板块, 房子其实都快卖完了时效性至4.5
+2019-09-06 15:31:29 [scheduling-1] INFO  com.xjy.timevalue.tasks.CTRTask -
+                2019-9-6 15:31:29: 根据CTR +0.2071调整土豆营养丰富, 又能填饱肚子, 为什么没有成为中国人的主食之一?时效性至4.5
+2019-09-06 15:31:29 [scheduling-1] INFO  com.xjy.timevalue.tasks.CTRTask -
+                2019-9-6 15:31:29: 根据CTR +0.2962调整网易云扎心热评: 别人删你系统不会提示, 你删别人, 系统: 确定吗时效性至3.06
+2019-09-06 15:31:29 [scheduling-1] INFO  com.xjy.timevalue.tasks.CTRTask -
+                2019-9-6 15:31:29: 根据CTR +0.1823调整上海工匠学院“育匠人”提高职工学历和能力 包起帆任院长时效性至4.5
+2019-09-06 15:31:29 [scheduling-1] INFO  com.xjy.timevalue.tasks.CTRTask -
+                2019-9-6 15:31:29: 根据CTR +0.1529调整当涂助推经济高质量发展走在前列时效性至3.7
+2019-09-06 15:31:29 [scheduling-1] INFO  com.xjy.timevalue.tasks.CTRTask -
+                2019-9-6 15:31:29: 根据CTR +0.1633调整北海交警与中国人保商议制定辖区“警保联动”方案时效性至4.5
+2019-09-06 15:31:29 [scheduling-1] INFO  com.xjy.timevalue.tasks.CTRTask -
+                2019-9-6 15:31:29: 根据CTR +0.2914调整释迦牟尼佛, 本是古印度迦毗罗卫国(今尼泊尔境内)的太子时效性至2.5
+2019-09-06 15:31:29 [scheduling-1] INFO  com.xjy.timevalue.tasks.CTRTask -
+                2019-9-6 15:31:29: 根据CTR +0.2908调整「虐心句」14句最热门的网易云音乐热评，看完好扎心时效性至4.5
+2019-09-06 15:31:29 [scheduling-1] INFO  com.xjy.timevalue.tasks.CTRTask -
+                2019-9-6 15:31:29: 根据CTR +0.1524调整打造醉“美”新四团时效性至4.5
+2019-09-06 15:31:29 [scheduling-1] INFO  com.xjy.timevalue.tasks.CTRTask -
+                2019-9-6 15:31:29: 根据CTR +0.2331调整高中三年坚持这6种方法, 英语从90分到144分! 差生也能逆袭时效性至5.5
+2019-09-06 15:31:29 [scheduling-1] INFO  com.xjy.timevalue.tasks.CTRTask -
+                2019-9-6 15:31:29: 根据CTR +0.167调整海底捞的番茄浓汤, 涮啥都好吃, 超鲜美, 巨香浓, 学会随吃随做时效性至2.5
+2019-09-06 15:31:29 [scheduling-1] INFO  com.xjy.timevalue.tasks.CTRTask -
+                2019-9-6 15:31:29: 根据CTR +0.236调整华为Mate 30再曝光: 还是浴霸设计?时效性至4.5
+2019-09-06 15:31:29 [scheduling-1] INFO  com.xjy.timevalue.tasks.CTRTask -
+                2019-9-6 15:31:29: 根据CTR +0.2026调整新民网: 儿童癫痫危害大, 出现这些症状家长要当心 ROSA机器人辅助切除病灶时效性至4.5
+2019-09-06 15:31:29 [scheduling-1] INFO  com.xjy.timevalue.tasks.CTRTask -
+                2019-9-6 15:31:29: 根据CTR +0.1986调整75寸电视太贵? 那考虑下家用投影仪吧时效性至4.5
+2019-09-06 15:31:29 [scheduling-1] INFO  com.xjy.timevalue.tasks.CTRTask -
+                2019-9-6 15:31:29: 根据CTR +0.2436调整我真的又想好好夸一下古天乐时效性至3.5
+2019-09-06 15:31:29 [scheduling-1] INFO  com.xjy.timevalue.tasks.CTRTask -
+                2019-9-6 15:31:29: 根据CTR +0.1847调整只有自己载出好果树, 自己才常有好果子吃时效性至2.5
+2019-09-06 15:31:29 [scheduling-1] INFO  com.xjy.timevalue.tasks.CTRTask -
+                2019-9-6 15:31:29: 根据CTR +0.2604调整构思精巧! 青花牌的墨色分布, 还能这样雕刻!时效性至2.5
+2019-09-06 15:31:29 [scheduling-1] INFO  com.xjy.timevalue.tasks.CTRTask -
+                2019-9-6 15:31:29: 根据CTR +0.2401调整宁溪镇积极开展四经普数据审核时效性至3.5
+2019-09-06 15:31:29 [scheduling-1] INFO  com.xjy.timevalue.tasks.CTRTask -
+                2019-9-6 15:31:29: 根据CTR +0.2285调整去西藏别只看布达拉宫, 这4个地方也值得一去!时效性至3.5
+2019-09-06 15:31:29 [scheduling-1] INFO  com.xjy.timevalue.tasks.CTRTask -
+                2019-9-6 15:31:29: 根据CTR +0.161调整应用日报 | 隐形守护者首次降价, 微视开放朋友圈 30 秒长视频, 还有 4 款限免时效性至3.5
+2019-09-06 15:31:29 [scheduling-1] INFO  com.xjy.timevalue.tasks.CTRTask -
+                2019-9-6 15:31:29: 根据CTR +0.2906调整怎么识别入门级渣男和骨灰级渣男时效性至2.5
+2019-09-06 15:31:29 [scheduling-1] INFO  com.xjy.timevalue.tasks.CTRTask -
+                2019-9-6 15:31:29: 根据CTR +0.1682调整女子穿裙子蹦极, 后面的人看热闹不嫌事大, 结果“太刺激了”!时效性至3.5
+2019-09-06 15:31:29 [scheduling-1] INFO  com.xjy.timevalue.tasks.CTRTask -
+                2019-9-6 15:31:29: 根据CTR +0.2453调整三年前她是李幼斌的“老婆”, 三年后却成为李幼斌的“儿媳妇”时效性至2.5
+2019-09-06 15:31:29 [scheduling-1] INFO  com.xjy.timevalue.tasks.CTRTask -
+                2019-9-6 15:31:29: 根据CTR +0.2628调整坚持跑步, 就会有意想不到的效果, 提高颜值也不是梦时效性至2.5

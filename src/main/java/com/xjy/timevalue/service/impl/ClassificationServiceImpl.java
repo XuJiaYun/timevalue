@@ -1,9 +1,10 @@
 package com.xjy.timevalue.service.impl;
 
 
-import com.xjy.timevalue.dto.TimeValueBean;
 import com.xjy.timevalue.common.utils.TimeValueUtil;
+import com.xjy.timevalue.dto.TimeValueBean;
 import com.xjy.timevalue.service.ClassificationService;
+import org.apache.commons.io.IOUtils;
 import org.springframework.stereotype.Service;
 import org.tensorflow.*;
 
@@ -16,13 +17,17 @@ import java.util.TreeMap;
 
 @Service
 public class ClassificationServiceImpl implements ClassificationService {
-    //使用set方法结合@value注解静态赋值
-    private static String path = "D:\\新浪新闻文本分类\\THUCNews\\model_pb_3";
-    private static String word2vecpath = "D:\\新浪新闻文本分类\\THUCNews\\vocabulary3.txt";
+    //private static String path = "D:\\新浪新闻文本分类\\THUCNews\\model_pb_3";
+    //private static String path = "D:\\新浪新闻文本分类\\THUCNews\\froze\\model.pb";
+    private static String realPath = ClassificationServiceImpl.class.getClassLoader().getResource("").getPath();
+    private static String path = realPath+"\\static\\model.pb";
+    //private static String word2vecpath = "D:\\新浪新闻文本分类\\THUCNews\\vocabulary4.txt";
+    private static String word2vecpath = realPath+"\\static\\vocabulary4.txt";
     private static String tags = "20190726";
     private static ArrayList<String> labelList = new ArrayList();
     private static TreeMap<Character,Integer> map = new TreeMap<Character, Integer>();
     private static SavedModelBundle b;
+    private static Graph graph = new Graph();
 
     static {
         try {
@@ -32,6 +37,7 @@ public class ClassificationServiceImpl implements ClassificationService {
         }
     }
 
+    //初始化操作，加载词汇表，读取模型
     private static void initService() throws IOException {
         labelList.add("体育");
         labelList.add("娱乐");
@@ -55,8 +61,7 @@ public class ClassificationServiceImpl implements ClassificationService {
 
         }
         br.close();
-        b = SavedModelBundle.load(path, tags);
-
+        graph.importGraphDef(IOUtils.toByteArray(new FileInputStream(path)));
     }
     @Override
     public TimeValueBean classify(TimeValueBean timeValueBean){
@@ -67,8 +72,8 @@ public class ClassificationServiceImpl implements ClassificationService {
         for(int i = idList.length-1, j = inputArray[0].length-1;i >= 0 && j >= 0;i--,j--){
             inputArray[0][j] = idList[i];
         }
-        Session tfSession = b.session();
-        Operation operationPredict = b.graph().operation("predict_Y");
+        Session tfSession = new Session(graph);
+        Operation operationPredict = graph.operation("predict_Y");
         Output output = new Output(operationPredict,0);
         Tensor input = Tensor.create(inputArray);
         Tensor out = tfSession.runner().feed("X_holder",input).fetch(output).run().get(0);
@@ -83,14 +88,6 @@ public class ClassificationServiceImpl implements ClassificationService {
         sb.append("初始化时效为"+TimeValueBean.cat2time[i]+"\n");
         timeValueBean.setContent(content);
         timeValueBean.setCleanContent(cleanContent);
-        for(int count = 2;count <= 3;count++){
-            out = tfSession.runner().feed("X_holder",input).fetch(output).run().get(0);
-            out.copyTo(ans);
-            i = getMax(ans[0]);
-            timeValueBean.setAndGetAverage(i);
-            sb.append("第"+ count + "次分类类别为"+TimeValueBean.cat2name[i]+"\n");
-        }
-        sb.append("经过两轮循环修正后时效为"+timeValueBean.getTime());
         return timeValueBean;
     }
 
